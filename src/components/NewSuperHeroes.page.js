@@ -2,7 +2,7 @@
 import {useState} from 'react'
 import { useSuperHeroesData } from '../hooks/useSuperHeroesData'
 
-export const RQSuperHeroesPage = () => {
+export const NewSuperHeroesPage = () => {
 
     const [interval, setInterval] = useState(3000)
     
@@ -39,7 +39,7 @@ export const RQSuperHeroesPage = () => {
     //console.log(data)
     return (
         <>
-            <h2>RQ Super Heroes</h2>
+            <h2>New Super Heroes</h2>
             <button className='btn-refetch' onClick={refetch}>Fetch Heroes</button>
             {
                 // data?.data.map(hero => {

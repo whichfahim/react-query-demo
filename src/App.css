@@ -20,6 +20,17 @@ nav ul li {
   margin-right: 16px;
 }
 
+.btn-refetch{
+  border: none;
+  padding: 10px;
+  width: 10rem;
+  border-radius: 5px;
+  margin-bottom: 8px;
+  background-color: #61dafb;
+  cursor: pointer;
+  box-shadow: 2px 4px rgba(0, 0, 0, 0.2);
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
     animation: App-logo-spin infinite 20s linear;

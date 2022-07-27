@@ -12,6 +12,7 @@ import './App.css'
 import { HomePage } from './components/Home.page'
 import { RQSuperHeroesPage } from './components/RQSuperHeroes.page'
 import { SuperHeroesPage } from './components/SuperHeroes.page'
+import { NewSuperHeroesPage } from './components/NewSuperHeroes.page';
 
 const queryClient = new QueryClient()
 
@@ -30,23 +31,16 @@ function App() {
             <li>
               <Link to='/rq-super-heroes'>RQ Super Heroes</Link>
             </li>
+            <li>
+              <Link to='/new-super-heroes'>New Super Heroes</Link>
+            </li>
           </ul>
         </nav>
         <Routes>
-            
-            {/* <Route path='/super-heroes'>
-              <SuperHeroesPage />
-            </Route>
-            <Route path='/rq-super-heroes'>
-              <RQSuperHeroesPage />
-            </Route>
-            
-            <Route path='/'>
-              <HomePage />
-            </Route> */}
             <Route path="/" element={<HomePage />} />
             <Route path="/super-heroes" element={<SuperHeroesPage />} />
             <Route path="/rq-super-heroes" element={<RQSuperHeroesPage />} />
+            <Route path="/new-super-heroes" element={<NewSuperHeroesPage />} />
         </Routes>
       </Router>
       <ReactQueryDevtools initialIsOpen={false} position="bottom-right"/>
